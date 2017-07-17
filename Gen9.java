@@ -21,9 +21,10 @@ public class Gen9{
 		{
 			rand = randy.nextInt(9);
 			if(x[rand] == 0){
+				// If the number hasn't been used then add it to the string
 				x[rand]++;
 				state += rand;
-				//System.out.println("CurState: " + state);
+				//DEBUG System.out.println("CurState: " + state);
 				numsGenerated++;
 				if(numsGenerated >= 9)
 					leave = true;
